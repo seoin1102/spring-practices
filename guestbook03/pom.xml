@@ -5,16 +5,15 @@
 		<artifactId>spring-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>emaillist03</artifactId>
+	<artifactId>guestbook03</artifactId>
 	<packaging>war</packaging>
-	
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
-		<org.springframework-version>5.3.20</org.springframework-version>
+		<org.springframework-version>5.3.18</org.springframework-version>
 	</properties>
 
 	<dependencies>
@@ -31,12 +30,14 @@
 		    <artifactId>spring-webmvc</artifactId>
 		    <version>${org.springframework-version}</version>
 		</dependency>
+		
 		<!-- MariaDB JDBC Driver -->
 		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
+		    <groupId>org.mariadb.jdbc</groupId>
 		    <artifactId>mariadb-java-client</artifactId>
 		    <version>2.7.5</version>
-		</dependency>   
+		</dependency>
+				
 		<!-- JSTL -->
 		<dependency>
 		    <groupId>jstl</groupId>
@@ -60,7 +61,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>emaillist03</finalName>
+		<finalName>guestbook03</finalName>
 		<plugins>
 			<plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
@@ -73,12 +74,11 @@
 			    <version>1.1</version>
 			    <configuration>
 			    	<url>http://192.168.10.46:8080/manager/text</url>
-			    	<path>/emaillist03</path>
+			    	<path>/guestbook03</path>
 			    	<username>admin</username>
 			    	<password>manager</password>
 			    </configuration>
 			</plugin>			
 		</plugins>
 	</build>	
-	
 </project>
