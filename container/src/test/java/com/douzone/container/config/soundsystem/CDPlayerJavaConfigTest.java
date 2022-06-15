@@ -15,8 +15,8 @@ import com.douzone.container.soundsystem.CDPlayer;
 import com.douzone.container.soundsystem.CompactDisc;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration("classpath:com/douzone/container/config/soundsystem/CDPlayerConfig.xml")
-public class CDPlayerXmlConfigTest {
+@ContextConfiguration(classes= {CDPlayerConfig.class})
+public class CDPlayerJavaConfigTest {
 	@Rule
 	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 	@Autowired
