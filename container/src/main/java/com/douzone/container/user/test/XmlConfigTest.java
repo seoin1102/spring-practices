@@ -13,16 +13,19 @@ public class XmlConfigTest {
 
 	public static void main(String[] args) {
 		// XML Auto Configuration(Annotation Scanning)
-		// testBeanFactory01();
-		
-		// XML Bean Configuration(Explicit Configuration)
-		// testBeanFactory02();
-		
-		// XML Auto Configuration(Annotation Scanning)
 		// testApplicationContext01();
 		
 		// XML Bean Configuration(Explicit Configuration)
 		testApplicationContext02();
+		
+		//==================================================
+		// XML Auto Configuration(Annotation Scanning)
+		// testBeanFactory01();
+		
+		// XML Bean Configuration(Explicit Configuration)
+		// testBeanFactory02();
+		//==================================================
+		
 	}
 
 	// XML Auto Configuration(Annotation Scanning)
