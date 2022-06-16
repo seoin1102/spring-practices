@@ -7,7 +7,6 @@ public class DVDPlayer {
 		this.dvd=dvd;
 	}
 	public DVDPlayer() {
-		// TODO Auto-generated constructor stub
 	}
 	public String play() {
 		return dvd.play();
